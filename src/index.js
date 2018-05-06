@@ -14,6 +14,9 @@ app.use(
     return {
       schema,
       graphiql: true,
+      context: {
+        req: request,
+      },
     };
   })
 );
